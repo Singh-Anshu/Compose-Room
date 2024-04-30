@@ -7,5 +7,6 @@ import androidx.room.RoomDatabase
 abstract class ContactDatabase : RoomDatabase() {
 
     abstract fun contactDao(): ContactDao
+    // TODO create all necesaary class
 
 }
