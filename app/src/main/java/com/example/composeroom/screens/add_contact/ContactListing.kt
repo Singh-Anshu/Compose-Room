@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.composeroom.R
 import com.example.composeroom.room.Contact
 import com.example.composeroom.ui.theme.ComposeRoomTheme
@@ -44,7 +45,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 
-                  //  ContactListScreen()
+                   ContactListScreen()
                 }
             }
         }
@@ -53,7 +54,7 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun ContactListScreen(contactViewModel: ContactViewModel ) {
+fun ContactListScreen(contactViewModel: ContactViewModel = viewModel() ) {
 
     val contactList = contactViewModel.contact.collectAsState().value
 
