@@ -1,4 +1,4 @@
-package com.example.composeroom.Repository
+package com.example.composeroom.repository
 
 import com.example.composeroom.room.Contact
 import com.example.composeroom.room.ContactDao
